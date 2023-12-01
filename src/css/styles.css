@@ -115,14 +115,34 @@ svg {
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgb(156, 163, 175) 0px 10px 15px -3px, rgb(156, 163, 175) 0px 4px 6px -4px;
 }
-.vertical-flex {
-  display: flex;
-  flex-direction: column;
+.col-1 {
+  display: grid;
+  justify-items: center;
+}
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
   align-items: center;
 }
-.horizontal-flex {
-  display: flex;
+.col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
+}
+.col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.unbalance-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
 }
 .section-container {
   align-items: center;
@@ -166,10 +186,10 @@ svg {
   font-weight: 600;
 }
 .start {
-  align-self: flex-start;
+  justify-self: left;
 }
 .end {
-  align-self: flex-end;
+  justify-self: right;
 }
 .center-text {
   text-align: center;
@@ -189,8 +209,6 @@ svg {
   height: 24px;
 }
 header {
-  justify-content: space-between;
-
   padding: 1.6rem 1.6rem 1.6rem 0.8rem;
   margin-bottom: 14.4rem;
 }
@@ -199,17 +217,14 @@ header {
   max-height: 8rem;
   transform: translateY(10%);
 }
-header nav ul {
-  display: flex;
-}
 
 header button {
   background-color: #ffffff;
 }
 footer {
   background-color: #e5e7eb;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
   margin-bottom: 0;
 }
@@ -220,7 +235,7 @@ footer img {
 table {
   border: 1px solid black;
   border-collapse: collapse;
-  width: 100%;
+  max-width: 100%;
   margin: 20px;
 }
 
@@ -259,9 +274,8 @@ td {
 
 /* HOME */
 #my-info {
-  display: flex;
-  flex-direction: column;
-  row-gap: 14.4rem;
+  display: grid;
+  gap: 14.4rem;
 }
 #hero {
   display: flex;
@@ -291,7 +305,8 @@ td {
 .hero-image a {
   position: absolute;
   top: 50%;
-  left: 8%;
+  left: 50%;
+  transform: translateX(-200%);
 }
 .hero-image img {
   max-width: 32rem;
@@ -383,7 +398,6 @@ td {
   border-radius: 9px 9px 0 0;
 }
 .connect-with-me {
-  display: flex;
   gap: 1.2rem;
   margin-bottom: 6.4rem;
 }
@@ -456,9 +470,10 @@ td {
 .absolut-header button {
   background-color: rgba(0, 0, 0, 0);
 }
-.project-header button svg {
+.absolut-header button svg {
   stroke: #fff;
 }
+
 #project-main {
   margin-left: 0;
   margin-right: 0;
@@ -567,7 +582,7 @@ td {
   gap: 0.6rem;
 }
 .table-of-content li {
-  align-self: flex-start;
+  justify-self: left;
 }
 .youtube-suggestions {
   gap: 1.6rem;
