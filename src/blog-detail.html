@@ -8,53 +8,77 @@
       content="Full Stack Web Developer passionate about turning ideas into elegant, functional web solutions. Specializing in back-end development with a design-focused approach to front-end development."
     />
 
-    <meta
-      name="keywords"
-      content="Full Stack Web Developer, Machine Learning, Web Development, JavaScript, React, Python, Django"
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/logos/favicon.ico"
+      type="image/x-icon"
     />
-
-    <meta name="author" content="Beka Birhanu" />
-    <link rel="icon" href="./images/logos/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <title>Beka | Blog-Detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
-      <nav>
-        <ul>
-          <li><a href="./index.html#hero">Home</a></li>
-          <li><a href="./index.html#about">About Me</a></li>
-          <li><a href="./index.html#skill">Skill</a></li>
-          <li><a href="./index.html#project">Projects</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-          <li><a href="./blog.html">Blog</a></li>
+    <header class="navbar container pt-5 pb-6">
+      <div class="navbar-brand">
+        <a href="./index.html" class="navbar-item">
+          <img
+            src="./images/logos/logo.png"
+            alt="Beka Birhanu Logo"
+            class="nav-logo"
+          />
+        </a>
 
-          <li><a href="./index.html#contact">Contact Me</a></li>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          class="mt-6"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <nav class="navbar-end">
+        <ul class="navbar-menu mt-5">
+          <li><a href="./index.html#hero" class="navbar-item">Home</a></li>
+          <li><a href="./index.html#about" class="navbar-item">About Me</a></li>
+          <li><a href="./index.html#skill" class="navbar-item">Skill</a></li>
+          <li>
+            <a href="./index.html#project" class="navbar-item">Projects</a>
+          </li>
+          <li><a href="./resume.html" class="navbar-item">Resume</a></li>
+          <li><a href="./blog.html" class="navbar-item">Blog</a></li>
+          <li>
+            <a href="./index.html#contact" class="navbar-item button"
+              >Contact Me</a
+            >
+          </li>
         </ul>
       </nav>
-      <button aria-label="Toggle Navigation">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
     </header>
-    <main>
-      <video
-        src="./images/Blog/What-is-Competitive-Programming.mp4"
-        autoplay
-      ></video>
+    <main class="container">
+      <div class="is-flex is-justify-content-center">
+        <video
+          src="./images/Blog/What-is-Competitive-Programming.mp4"
+          autoplay
+        ></video>
+      </div>
       <h1>Competitive Programming, How to start and Keep going</h1>
       <p>
         Do you wanna know how i my programming journey started? Let’s find out
@@ -486,54 +510,65 @@
           They have youtube channel where they share their experience and tips
           to solve problems. You can learn a lot from them.
         </p>
-        <ol>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCn9ng6ZUnh5weU1BsIQoZ5w"
-              target="_blank"
-              >Neetcode</a
-            >
-            <iframe
-              src="https://www.youtube.com/embed/8wysIxzqgPI"
-              title="My Brain after 569 Leetcode Problems"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@Errichto" target="_blank"
-              >Errichto</a
-            >
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/xAeiXy8-9Y8?si=Sd8kvzNAl1Um8ej_"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@tmwilliamlin168" target="_blank"
-              >William Lin</a
-            >
-            <iframe
-              src="https://www.youtube.com/embed/ueNT-w7Oluw"
-              title="What is Competitive Programming?"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@SecondThread" target="_blank"
-              >SecondThread</a
-            >
-            <iframe
-              src="https://www.youtube.com/embed/hT0F9yukULg"
-              title="The Most Courageous Competitive Programmer in ICPC World Finals"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </li>
-        </ol>
+        <div class="columns is-multiline">
+          <div class="column is-6">
+            <div class="box">
+              <a
+                href="https://www.youtube.com/channel/UCn9ng6ZUnh5weU1BsIQoZ5w"
+                target="_blank"
+                >Neetcode</a
+              >
+              <iframe
+                src="https://www.youtube.com/embed/8wysIxzqgPI"
+                title="My Brain after 569 Leetcode Problems"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div class="box">
+              <a href="https://www.youtube.com/@Errichto" target="_blank"
+                >Errichto</a
+              >
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/xAeiXy8-9Y8?si=Sd8kvzNAl1Um8ej_"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div class="box">
+              <a href="https://www.youtube.com/@tmwilliamlin168" target="_blank"
+                >William Lin</a
+              >
+              <iframe
+                src="https://www.youtube.com/embed/ueNT-w7Oluw"
+                title="What is Competitive Programming?"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div class="box">
+              <a href="https://www.youtube.com/@SecondThread" target="_blank"
+                >SecondThread</a
+              >
+              <iframe
+                src="https://www.youtube.com/embed/hT0F9yukULg"
+                title="The Most Courageous Competitive Programmer in ICPC World Finals"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
 
         <p>and many more.</p>
       </section>
@@ -563,8 +598,14 @@
         <p>Beka Birhnau</p>
       </section>
     </main>
-    <footer>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
+    <footer
+      class="is-flex is-justify-content-center has-background-grey-lighter p-3 mt-6"
+    >
+      <img
+        src="./images/logos/logo.png"
+        alt="Beka Birhanu Logo"
+        class="footer-logo"
+      />
     </footer>
   </body>
 </html>
