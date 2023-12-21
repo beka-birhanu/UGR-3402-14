@@ -35,16 +35,15 @@ p {
   font-size: 1.4rem;
 }
 
-a:link,
+/* a:link,
 a:visited {
-  color: #11215f;
   transition: all 0.2s ease-in-out;
 }
 
 a:hover,
 a:active {
-  scale: 105% 105% 105%;
-}
+  scale: 101% 101% 101%;
+} */
 svg {
   vertical-align: middle;
 }
@@ -56,11 +55,11 @@ svg {
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgb(156, 163, 175) 0px 10px 15px -3px, rgb(156, 163, 175) 0px 4px 6px -4px;
 }
-.vertical-flex {
+/* .vertical-flex {
   align-items: center;
   display: flex;
   flex-direction: column;
-}
+} */
 .horizontal-flex {
   align-items: center;
   display: flex;
@@ -74,10 +73,10 @@ svg {
   grid-template-columns: 1fr 2fr;
 }
 .p-1 {
-  color: #4b5563;
+  /* color: #4b5563;
   font-size: 1.4rem;
   font-weight: 400;
-  letter-spacing: 0.075rem;
+  letter-spacing: 0.075rem; */
 }
 .p-2 {
   font-size: 1.6rem;
@@ -85,8 +84,8 @@ svg {
 }
 
 .h-1 {
-  font-size: 3.6rem;
-  font-weight: 700;
+  /* font-size: 3.6rem;
+  font-weight: 700; */
   letter-spacing: -0.7px;
 }
 .h-2 {
@@ -98,7 +97,7 @@ svg {
   font-weight: 600;
 }
 .blue {
-  color: #5651e5;
+  /* color: #5651e5; */
 }
 .title {
   font-size: 2.4rem;
@@ -127,10 +126,10 @@ td {
   text-align: center;
   vertical-align: middle;
 }
-.main-container {
+/* .main-container {
   margin: 0 2.4rem 0 2.4rem;
   max-width: 1024px;
-}
+} */
 .section-container {
   align-items: center;
   gap: 3.2rem;

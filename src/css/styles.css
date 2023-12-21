@@ -1,9 +1,7 @@
-/* HOME */
-
-.my-info__hero {
+/* HOME .my-info__hero {
   margin-top: 6.4rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   row-gap: 6.4rem;
 }
 .my-info__hero__text {
@@ -18,8 +16,8 @@
   justify-content: center;
   position: relative;
 }
-.my-info__hero__image__a {
-  left: 8%;
+.my-info__hero__image__a { */
+/* left: 8%;
   position: absolute;
   top: 50%;
 }
@@ -82,7 +80,7 @@
 .contact-form__message {
   display: none;
   padding: 0.8rem;
-  background-color: #f2f2f2;
+  background-color: rgb(242, 242, 242);
   border-radius: 9px 9px 9px 0px;
 }
 .contact-form__message i {
@@ -101,11 +99,6 @@
 
 /* project detail page */
 
-.project-main {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
 .project-main__project-hero {
   background-image: url(../images/background/project-detail-hero.png);
   background-position: center;
@@ -235,9 +228,7 @@
   .platform-container {
     grid-template-columns: 1fr 1fr;
   }
-  html {
-    font-size: 18px;
-  }
+
   .project-main__project-info {
     grid-template-columns: 5fr 1fr;
   }
