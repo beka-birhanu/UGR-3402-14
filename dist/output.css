@@ -734,6 +734,14 @@ video {
   height: 6rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
 .min-h-96 {
   min-height: 24rem;
 }
@@ -748,6 +756,10 @@ video {
 
 .w-56 {
   width: 14rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-20 {
