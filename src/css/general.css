@@ -121,10 +121,10 @@ table {
 
 th,
 td {
-  border: 1px solid #040716;
+  /* border: 1px solid #040716;
   padding: 4px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: middle; */
 }
 /* .main-container {
   margin: 0 2.4rem 0 2.4rem;
