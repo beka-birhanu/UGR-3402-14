@@ -190,26 +190,34 @@
     <main class="m-0">
       <section class="relative text-white min-h-96">
         <img
-          src="./images/background/project-detail-hero.png"
+          src="./images/background/project-detail-hero-desktop.png"
           alt="project screen shoot"
-          class="sm:w-full h-full"
+          class="hidden sm:block w-full"
         />
         <img
           src="./images/background/project-detail-hero.png"
           alt="project screen shoot"
-          class="sm:w-full h-full md:hidden"
+          class="sm:hidden w-full"
         />
         <div class="absolute bottom-20 left-10">
           <h1 class="text-5xl font-bold">Github Finder App</h1>
-          <p class="h-3">React JS <span>/</span>Bootstrap</p>
+          <p class="text-2xl">React JS <span>/</span>Bootstrap</p>
         </div>
       </section>
-      <div class="project-main__project-info grid section-container">
-        <section class="section-container vertical-flex">
-          <div>
-            <p class="p-1 start">Project</p>
-            <h2 class="h-2 start">Overview</h2>
-            <p class="p-2">
+      <div
+        class="flex flex-col md:flex-row items-start justify-between gap-y-24 p-5"
+      >
+        <section class="flex-col flex gap-y-24 md:w-3/4">
+          <div class="flex flex-col gap-y-3">
+            <div>
+              <p
+                class="text-xl tracking-wider font-medium uppercase text-gray-500"
+              >
+                Project
+              </p>
+              <h2 class="text-4xl font-bold">Overview</h2>
+            </div>
+            <p class="text-2xl leading-relaxed">
               I built this app to demonstrate knowledge working in React JS and
               accessing API endpoints. This app was built using React JS and is
               hosted on Netlify. Users are able to search for github user
@@ -219,16 +227,16 @@
           </div>
           <nav
             aria-label="Links to GitHub repository and deployed site of the project"
-            class="start"
+            class="self-start"
           >
-            <ul class="horizontal-flex section-container">
+            <ul class="flex gap-10">
               <li>
                 <a
                   href="https://github.com/Ebbabire/github_finder"
                   title="View the GitHub repository for GitHub Finder project"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn--primary btn shadow-1"
+                  class="shadow-gray-400 shadow-lg transition-all duration-200 ease-in-out bg-gradient-to-r from-indigo-700 to-blue-500 text-white p-5 text-2xl font-medium rounded-xl hover:scale-105"
                   >Code</a
                 >
               </li>
@@ -238,24 +246,30 @@
                   title="Explore the deployed site for GitHub Finder project"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn--primary btn shadow-1"
+                  class="shadow-gray-400 shadow-lg transition-all duration-200 ease-in-out bg-gradient-to-r from-indigo-700 to-blue-500 text-white p-5 text-2xl font-medium rounded-xl hover:scale-105"
                   >Demo</a
                 >
               </li>
             </ul>
           </nav>
         </section>
-        <section class="technologies-used shadow-1 vertical-flex">
-          <h2 class="h-3">technologies</h2>
-          <ul class="technologies-used__list">
-            <li class="p-2">React</li>
-            <li class="p-2">Tailwind</li>
-            <li class="p-2">Javascript</li>
-            <li class="p-2">Github API</li>
+        <section
+          class="flex flex-col md:w-1/4 w-full py-5 px-10 shadow-gray-400 shadow-lg justify-center gap-6 rounded-xl"
+        >
+          <h2 class="text-2xl font-bold text-center">technologies</h2>
+          <ul
+            class="flex justify-between md:justify-center md:flex-col list-disc rounded-xl mx-5"
+          >
+            <li class="rounded-xl text-2xl mb-3 font-medium">React</li>
+            <li class="rounded-xl text-2xl mb-3 font-medium">Tailwind</li>
+            <li class="rounded-xl text-2xl mb-3 font-medium">Javascript</li>
+            <li class="rounded-xl text-2xl mb-3 font-medium">Github API</li>
           </ul>
         </section>
-        <a href="./index.html#project" class="start p-2">back</a>
       </div>
+      <a href="./index.html#project" class="m-10 block underline text-2xl"
+        >&lt; back</a
+      >
     </main>
     <script src="./script/header.js"></script>
   </body>
