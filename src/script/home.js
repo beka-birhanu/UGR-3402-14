@@ -38,14 +38,6 @@ mobileNavAnchor.forEach((link, index) => {
     });
   }
 });
-// Add click event listener to a specific element with class 'my-info__hero__image__a'
-body
-  .querySelector(".my-info__hero__image__a")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    const targetId = this.getAttribute("href");
-    smoothScrollTo(targetId);
-  });
 
 // Add submit event listener to the contact form
 contactForm.addEventListener("submit", function (event) {
