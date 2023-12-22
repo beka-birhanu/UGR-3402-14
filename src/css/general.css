@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  /* margin: 0; */
   max-width: 100%;
-  padding: 0;
+  /* padding: 0; */
 }
-button {
+/* button {
   border: none;
 }
 video {
@@ -13,7 +13,7 @@ video {
 ul,
 ol {
   list-style: none;
-}
+} */
 input,
 textarea {
   display: block;
@@ -23,17 +23,17 @@ html {
   font-size: 62.5%;
   scroll-padding-top: 6.4rem;
 }
-article {
+/* article {
   margin-bottom: 14.4rem;
-}
+} */
 body {
   color: #040716;
   font-family: "Raleway", sans-serif;
 }
 
-p {
+/* p {
   font-size: 1.4rem;
-}
+} */
 
 /* a:link,
 a:visited {
@@ -48,58 +48,58 @@ svg {
   vertical-align: middle;
 }
 
-.circle {
+/* .circle {
   border-radius: 50%;
-}
-.shadow-1 {
+} */
+/* .shadow-1 {
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgb(156, 163, 175) 0px 10px 15px -3px, rgb(156, 163, 175) 0px 4px 6px -4px;
-}
+} */
 /* .vertical-flex {
   align-items: center;
   display: flex;
   flex-direction: column;
 } */
-.horizontal-flex {
+/* .horizontal-flex {
   align-items: center;
   display: flex;
-}
-.grid {
+} */
+/* .grid {
   align-items: center;
   display: grid;
   justify-content: center;
-}
-.grid--two-col {
+} */
+/* .grid--two-col {
   grid-template-columns: 1fr 2fr;
-}
-.p-1 {
+} */
+/* .p-1 {
   /* color: #4b5563;
   font-size: 1.4rem;
   font-weight: 400;
-  letter-spacing: 0.075rem; */
-}
-.p-2 {
+  letter-spacing: 0.075rem; 
+} */
+/* .p-2 {
   font-size: 1.6rem;
   line-height: 1.6;
-}
+} */
 
-.h-1 {
+/* .h-1 {
   /* font-size: 3.6rem;
-  font-weight: 700; */
+  font-weight: 700; 
   letter-spacing: -0.7px;
-}
-.h-2 {
+} */
+/* .h-2 {
   font-size: 2.6rem;
   font-weight: 600;
-}
-.h-3 {
+} */
+/* .h-3 {
   font-size: 1.6rem;
   font-weight: 600;
-}
-.blue {
-  /* color: #5651e5; */
-}
-.title {
+} */
+/* .blue {
+  /* color: #5651e5; 
+} */
+/* .title {
   font-size: 2.4rem;
   font-weight: 600;
 }
@@ -120,20 +120,20 @@ table {
 }
 
 th,
-td {
-  /* border: 1px solid #040716;
+td { */
+/* border: 1px solid #040716;
   padding: 4px;
   text-align: center;
   vertical-align: middle; */
-}
+/* } */
 /* .main-container {
   margin: 0 2.4rem 0 2.4rem;
   max-width: 1024px;
 } */
-.section-container {
+/* .section-container {
   align-items: center;
   gap: 3.2rem;
 }
 .article-container {
   gap: 14.4rem;
-}
+} */

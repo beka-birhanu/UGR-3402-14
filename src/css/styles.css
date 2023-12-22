@@ -99,7 +99,7 @@
 
 /* project detail page */
 
-.project-main__project-hero {
+/* .project-main__project-hero {
   background-image: url(../images/background/project-detail-hero.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -133,9 +133,9 @@
   justify-content: space-between;
   list-style: circle;
   width: 90%;
-}
+} */
 
-/* RESUME page */
+/* RESUME page
 
 .interested-in {
   line-height: 1.4;
@@ -161,26 +161,26 @@
   line-height: 1.5;
   list-style: circle;
   margin-left: 2.4rem;
-}
+} */
 
 /* BLOG */
-.blog-header {
+/* .blog-header {
   margin-bottom: 6.4rem;
-}
-.testimonial {
+} */
+/* .testimonial {
   display: grid;
-}
+} */
 
-.testimonial__testimonial-card {
-  align-self: flex-start;
-  border-radius: 9px;
+/* .testimonial__testimonial-card {
+  /* align-self: flex-start;
+  border-radius: 9px; 
   gap: 1.6rem;
   max-width: 40rem;
   padding: 1rem;
-}
-.testimonial-card__text {
+} */
+/* .testimonial-card__text {
   padding-left: 1.2rem;
-}
+} */
 
 /* blog detail */
 .intro {

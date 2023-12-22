@@ -21,10 +21,7 @@
       href="./images/logos/favicon.ico"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +31,8 @@
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/components.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../dist/output.css" rel="stylesheet" />
+
     <title>Beka | Resume</title>
   </head>
   <body>
@@ -180,7 +178,7 @@
     </div>
     <main class="flex flex-col items-center max-w-full mt-56">
       <h1 class="text-center text-5xl font-medium">Resume</h1>
-      <div class="mx-10 max-w-screen-lg">
+      <div class="mx-10 max-w-screen-lg flex-col flex gap-56">
         <article
           id="resume-article"
           class="flex flex-col justify-items-stretch gap-y-24"
@@ -605,7 +603,7 @@
               >IDIR Managment App</a
             >
           </section>
-          <section class="flex flex-col gap-5 justify-items-stretch">
+          <section class="flex flex-col gap-5 justify-items-stretch mb-48">
             <div class="flex justify-between w-full">
               <h3 class="text-2xl font-medium">
                 Car Rental Platform Development (Vroomy)
