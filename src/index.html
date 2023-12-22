@@ -34,8 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/components.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -48,7 +47,7 @@
           alt="Beka Birhanu Logo"
           class="max-w-44"
         />
-        <nav class="mobile-hidden">
+        <nav class="hidden md:block">
           <ul class="flex justify-center space-x-6">
             <li>
               <a
@@ -102,17 +101,16 @@
           </ul>
         </nav>
 
-        <button
-          aria-label="Toggle Navigation"
-          class="btn--headerNav only-mobile"
-        >
+        <button aria-label="Toggle Navigation" class="md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="nav-icon"
+            height="26"
+            width="26"
+            class="text-black"
           >
             <path
               stroke-linecap="round"
@@ -123,12 +121,14 @@
         </button>
       </div>
     </header>
-    <div class="only-mobile header--mobile header--mobile--inactive">
-      <div class="header--mobile__hero">
+    <div
+      class="md:hidden w-full h-full py-44 px-10 fixed top-0 right-0 z-40 transition-all duration-200 ease-in-out flex flex-col gap-20 items-stretch bg-white bg-opacity-60 backdrop-blur-lg header--mobile header--mobile--inactive"
+    >
+      <div class="flex flex-col gap-16 max-w-lg">
         <img
           src="./images/logos/logo.png"
           alt="Beka Birhanu Logo"
-          class="header__logo"
+          class="w-56"
         />
         <button>
           <svg
@@ -136,7 +136,7 @@
             height="24"
             viewBox="0 -960 960 960"
             width="24"
-            class="btn--cancel"
+            class="absolute top-10 right-10 z-50"
           >
             <path
               d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
@@ -145,33 +145,61 @@
         </button>
 
         <div>
-          <p class="p-1">LET'S BUILD SOMETHING TOGETHER</p>
+          <p class="text-2xl tracking-widest font-thin">
+            LET'S BUILD SOMETHING TOGETHER
+          </p>
           <br />
           <hr />
         </div>
       </div>
       <nav>
-        <ul class="header__nav--mobile">
+        <ul class="flex flex-col gap-5 ml-10">
           <li>
-            <a href="#my-info" class="header__nav_anchor p-1">Home</a>
+            <a
+              href="#my-info"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#about" class="header__nav_anchor p-1">About</a>
-          </li>
-          <li><a href="#skill" class="header__nav_anchor p-1">Skill</a></li>
-          <li>
-            <a href="#project" class="header__nav_anchor p-1">Projects</a>
-          </li>
-          <li>
-            <a href="./resume.html" class="header__nav_anchor p-1">Resume</a>
+            <a
+              href="#about"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >About</a
+            >
           </li>
           <li>
-            <a href="./blog.html" class="header__nav_anchor p-1">Blog</a>
+            <a
+              href="#skill"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Skill</a
+            >
+          </li>
+          <li>
+            <a
+              href="#project"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="./resume.html"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="./blog.html"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Blog</a
+            >
           </li>
           <li>
             <a
               href="#contact"
-              class="header__nav_anchor header__nav_anchor--contact--mobile p-1"
+              class="no-underline font-medium tracking-wider text-3xl"
               >Contact Me</a
             >
           </li>
@@ -652,7 +680,7 @@
                 <div class="get-in-touch-hero">
                   <img
                     src="./images/background/web-development-header1.png"
-                    class="align-self-baseline max-w-3xl max-w-full md:max-w-full"
+                    class="align-self-baseline max-w-full md:max-w-full"
                   />
                   <div class="flex flex-col gap-4 left-4 p-4 top-4">
                     <h2 class="text-4xl font-bold">Beka Birhanu</h2>
