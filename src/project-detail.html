@@ -14,99 +14,278 @@
     />
 
     <meta name="author" content="Beka Birhanu" />
-    <link rel="icon" href="./images/logos/logo.jpg" />
+    <link rel="icon" href="./images/logos/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/logos/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="../dist/output.css" rel="stylesheet" />
+
     <title>Beka | Project</title>
   </head>
   <body>
-    <header>
-      <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
-      <nav aria-label="Page Navigation">
-        <ul>
-          <li><a href="./index.html#hero">Home</a></li>
-          <li><a href="./index.html#about">About Me</a></li>
-          <li><a href="./index.html#skill">Skill</a></li>
-          <li><a href="./index.html#project">Projects</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-
-          <li><a href="./index.html#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-      <button aria-label="Toggle Navigation">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
-    </header>
-    <main>
-      <section>
-        <h1>Github Finder App</h1>
-        <p>React JS <span>-</span>Bootstrap</p>
+    <header class="fixed text-white w-full z-20">
+      <div
+        class="flex justify-between items-center pt-7 pb-3.5 px-12 m-0 max-w-screen-2xl"
+      >
         <img
-          src="./images/projects/githubFinder-home.png"
-          alt="Home page of github finder project"
+          src="./images/logos/logo.png"
+          alt="Beka Birhanu Logo"
+          class="max-w-44"
         />
-      </section>
-      <section>
-        <p>Project</p>
-        <h2>Overview</h2>
-        <p>
-          I built this app to demonstrate knowledge working in React JS and
-          accessing API endpoints. This app was built using React JS and is
-          hosted on Netlify. Users are able to search for github user accounts.
-          This is made possble by accesing the github api endpoints. This
-          application was built using the GitHub API.
-        </p>
-        <nav
-          aria-label="Links to GitHub repository and deployed site of the project"
-        >
-          <ul>
+        <nav class="hidden md:block">
+          <ul class="flex justify-center space-x-6">
             <li>
               <a
-                href="https://github.com/Ebbabire/github_finder"
-                title="View the GitHub repository for GitHub Finder project"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Code on GitHub</a
+                href="./index.html#my-info"
+                class="no-underline transition-all font-normal tracking-wider opacity-80 hover:opacity-100 text-2xl"
+                >Home</a
               >
             </li>
             <li>
               <a
-                href="https://github-finder-ebba.netlify.app/"
-                title="Explore the deployed site for GitHub Finder project"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Demo</a
+                href="./index.html#about"
+                class="no-underline transition-all font-normal tracking-wider opacity-80 hover:opacity-100 text-2xl"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#skill"
+                class="no-underline transition-all font-normal tracking-wider opacity-80 hover:opacity-100 text-2xl"
+                >Skill</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#project"
+                class="no-underline transition-all font-normal tracking-wider opacity-80 hover:opacity-100 text-2xl"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./resume.html"
+                class="no-underline transition-all font-normal tracking-wider opacity-80 hover:opacity-100 text-2xl"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="no-underline transition-all font-normal tracking-wider opacity-80 hover:opacity-100 text-2xl"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#contact"
+                class="no-underline transition-all font-normal tracking-wider opacity-80 hover:opacity-100 p-4 text-2xl border-slate-200 hover:border-slate-300 border-solid border-2 rounded-lg"
+                >Contact Me</a
               >
             </li>
           </ul>
         </nav>
-      </section>
-      <section>
-        <h2>technologies</h2>
-        <ul>
-          <li>React</li>
-          <li>Tailwind</li>
-          <li>Javascript</li>
-          <li>Github API</li>
+
+        <button aria-label="Toggle Navigation" class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            height="26"
+            width="26"
+            class="text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      class="md:hidden w-full h-full py-44 px-10 fixed top-0 right-0 z-40 transition-all duration-200 ease-in-out flex flex-col gap-20 items-stretch bg-white bg-opacity-60 backdrop-blur-lg header--mobile header--mobile--inactive"
+    >
+      <div class="flex flex-col gap-16 max-w-lg">
+        <img
+          src="./images/logos/logo.png"
+          alt="Beka Birhanu Logo"
+          class="w-56"
+        />
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+            class="absolute top-10 right-10 z-50"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </button>
+
+        <div>
+          <p class="text-2xl tracking-widest font-thin">
+            LET'S BUILD SOMETHING TOGETHER
+          </p>
+          <br />
+          <hr />
+        </div>
+      </div>
+      <nav>
+        <ul class="flex flex-col gap-5 ml-10">
+          <li>
+            <a
+              href="./index.html#my-info"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#about"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#skill"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Skill</a
+            >
+          </li>
+          <li>
+            <a
+              href="#project"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="./resume.html"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="./blog.html"
+              class="no-underline font-normal tracking-wider text-2xl"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#contact"
+              class="no-underline font-medium tracking-wider text-3xl"
+              >Contact Me</a
+            >
+          </li>
         </ul>
+      </nav>
+    </div>
+    <main class="m-0">
+      <section class="relative text-white min-h-96">
+        <img
+          src="./images/background/project-detail-hero-desktop.png"
+          alt="project screen shoot"
+          class="hidden sm:block w-full"
+        />
+        <img
+          src="./images/background/project-detail-hero.png"
+          alt="project screen shoot"
+          class="sm:hidden w-full"
+        />
+        <div class="absolute bottom-20 left-10">
+          <h1 class="text-5xl font-bold">Github Finder App</h1>
+          <p class="text-2xl">React JS <span>/</span>Bootstrap</p>
+        </div>
       </section>
-      <a href="./index.html#project">back</a>
+      <div
+        class="flex flex-col md:flex-row items-start justify-between gap-y-24 p-5"
+      >
+        <section class="flex-col flex gap-y-24 md:w-3/4">
+          <div class="flex flex-col gap-y-3">
+            <div>
+              <p
+                class="text-xl tracking-wider font-medium uppercase text-gray-500"
+              >
+                Project
+              </p>
+              <h2 class="text-4xl font-bold">Overview</h2>
+            </div>
+            <p class="text-2xl leading-relaxed">
+              I built this app to demonstrate knowledge working in React JS and
+              accessing API endpoints. This app was built using React JS and is
+              hosted on Netlify. Users are able to search for github user
+              accounts. This is made possble by accesing the github api
+              endpoints. This application was built using the GitHub API.
+            </p>
+          </div>
+          <nav
+            aria-label="Links to GitHub repository and deployed site of the project"
+            class="self-start"
+          >
+            <ul class="flex gap-10">
+              <li>
+                <a
+                  href="https://github.com/Ebbabire/github_finder"
+                  title="View the GitHub repository for GitHub Finder project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="shadow-gray-400 shadow-lg transition-all duration-200 ease-in-out bg-gradient-to-r from-indigo-700 to-blue-500 text-white p-5 text-2xl font-medium rounded-xl hover:scale-105"
+                  >Code</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github-finder-ebba.netlify.app/"
+                  title="Explore the deployed site for GitHub Finder project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="shadow-gray-400 shadow-lg transition-all duration-200 ease-in-out bg-gradient-to-r from-indigo-700 to-blue-500 text-white p-5 text-2xl font-medium rounded-xl hover:scale-105"
+                  >Demo</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section
+          class="flex flex-col md:w-1/4 w-full py-5 px-10 shadow-gray-400 shadow-lg justify-center gap-6 rounded-xl"
+        >
+          <h2 class="text-2xl font-bold text-center">technologies</h2>
+          <ul
+            class="flex justify-between md:justify-center md:flex-col list-disc rounded-xl mx-5"
+          >
+            <li class="rounded-xl text-2xl mb-3 font-medium">React</li>
+            <li class="rounded-xl text-2xl mb-3 font-medium">Tailwind</li>
+            <li class="rounded-xl text-2xl mb-3 font-medium">Javascript</li>
+            <li class="rounded-xl text-2xl mb-3 font-medium">Github API</li>
+          </ul>
+        </section>
+      </div>
+      <a href="./index.html#project" class="m-10 block underline text-2xl"
+        >&lt; back</a
+      >
     </main>
+    <script src="./script/header.js"></script>
   </body>
-  <footer>
-    <img src="./images/logos/logo.jpg" alt="Beka Birhanu Logo" />
-  </footer>
 </html>
